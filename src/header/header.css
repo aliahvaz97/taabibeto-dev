@@ -1,0 +1,241 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+  direction: rtl; /* راست به چپ */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Vazir', sans-serif; /* استفاده از فونت Vazir */
+}
+
+/* استایل لوگو */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00aaff;
+  text-decoration: none;
+  position: absolute;
+  right: 20px; /* قرارگیری لوگو در سمت راست */
+}
+/* استایل لوگو */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px; /* قرارگیری لوگو در سمت راست */
+}
+
+.logo a {
+  color: #00aaff; /* رنگ لوگو */
+  text-decoration: none; /* حذف خط زیر لینک */
+  transition: color 0.3s; /* انیمیشن نرم هنگام تغییر رنگ */
+}
+
+.logo a:hover {
+  color: #007bb5; /* رنگ جدید هنگام هاور */
+}
+
+/* استایل دکمه‌های ورود و ثبت‌نام */
+.auth-links {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  left: 20px; /* قرار دادن دکمه‌ها در سمت چپ */
+}
+
+.auth-links a {
+  color: #00aaff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #00aaff;
+  border-radius: 5px;
+}
+
+/* منوی ناوبری */
+.nav-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+/* منوی همبرگری */
+.menu-toggle {
+  display: none; /* پنهان کردن منوی همبرگری در نمایشگرهای بزرگ */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+/* استایل‌های نمایش موبایل */
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between; /* مرکز کردن محتوا برای موبایل */
+  }
+
+  .logo {
+    position: absolute;
+    right: 20px; /* موقعیت لوگو برای موبایل */
+  }
+
+  .auth-links {
+    position: absolute;
+    left: 20px; /* قرار دادن دکمه‌ها در سمت چپ */
+    font-size: 14px;
+  }
+
+  .menu-toggle {
+    display: flex; /* نمایش منوی همبرگری */
+    position: absolute;
+    right: 20px;
+  }
+
+  .nav-links {
+    display: none; /* پنهان کردن منوی ناوبری */
+    position: absolute;
+    top: 60px; /* فاصله از بالای هدر */
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .nav-links.open {
+    display: flex; /* نمایش منوی ناوبری هنگام کلیک روی منوی همبرگری */
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+  direction: rtl; /* راست به چپ */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Vazir', sans-serif; /* استفاده از فونت Vazir */
+}
+
+/* استایل لوگو */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00aaff;
+  text-decoration: none;
+  position: relative; /* تغییر به relative برای موقعیت‌دهی دقیق‌تر */
+  margin-right: auto; /* قرارگیری لوگو در سمت راست و فاصله از دکمه‌های ورود */
+  text-align: center; /* مرکز کردن متن لوگو */
+}
+
+/* استایل دکمه‌های ورود و ثبت‌نام */
+.auth-links {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  left: 20px; /* قرار دادن دکمه‌ها در سمت چپ */
+}
+
+.auth-links a {
+  color: #00aaff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #00aaff;
+  border-radius: 5px;
+}
+
+/* منوی ناوبری */
+.nav-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+/* منوی همبرگری */
+.menu-toggle {
+  display: none; /* پنهان کردن منوی همبرگری در نمایشگرهای بزرگ */
+  flex-direction: column;
+  cursor: pointer;
+  position: relative; /* اصلاح موقعیت برای جلوگیری از هم‌پوشانی */
+  margin-left: auto; /* حرکت منو همبرگری به گوشه سمت راست */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+/* استایل‌های نمایش موبایل */
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between; /* مرکز کردن محتوا برای موبایل */
+  }
+
+  .logo {
+    position: absolute;
+    right: 50%; /* تغییر برای نمایش بهتر لوگو در وسط */
+    transform: translateX(50%); /* تغییر مکان لوگو به مرکز */
+  }
+
+  .auth-links {
+    position: absolute;
+    left: 20px;
+    font-size: 14px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    right: 20px;
+  }
+
+  .nav-links {
+    display: none; /* پنهان کردن منوی ناوبری */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .nav-links.open {
+    display: flex; /* نمایش منوی ناوبری هنگام کلیک روی منوی همبرگری */
+  }
+}
