@@ -13,7 +13,7 @@ const SignUpWithPhone = ({ onLoginSuccess }) => {
     if (phoneNumber && lastName) {
       setOtpSent(true);
       console.log('OTP sent to:', phoneNumber);
-      // در اینجا باید کد ارسال OTP به سرور خود را اضافه کنید.
+      // در اینجا باید کد ارسال OTP به سرور خود را اضافه کنید...
     } else {
       alert('لطفاً شماره تلفن و نام خانوادگی را وارد کنید.');
     }
